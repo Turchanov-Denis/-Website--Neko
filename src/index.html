@@ -14,15 +14,56 @@
 </head>
 <body>
     <header>
-        <div class="container-fluid"><nav>
-            <ul class="menu">
+        <div class="container"><div id="navbar">
+            <div class="dropdown">
+                <button class="dropbtn">-- Neko helper --
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Скачать</a>
+                </div>
+            <!-- <ul class="menu">
                 <li class="menu_item"><a href="" class="menu_link">-- Neko helper --</a></li>
                 <li class="menu_item"><a href="" class="menu_link">-- Neko's library --</a></li>
                 <li class="menu_item"><a href="" class="menu_link">-- Firo's parser --</a></li>
                 <li class="menu_item"><a href="" class="menu_link">\\ Tutorial \\</a></li>
-            </ul>
-        </nav></div>
+            </ul> -->
+            </div>
+            <div class="dropdown">
+                <buttton class="dropbtn">-- Neko's library --</buttton>
+                <div class="dropdown-content">
+                    <a href="#">Скачать</a>
+                  </div>
+            </div>
+            <div class="dropdown">
+                <buttton class="dropbtn">-- Firo's parser --</buttton>
+                <div class="dropdown-content">
+                    <a href="#">Скачать</a>
+                  </div>
+            </div>
+            <div class="dropdown">
+                <buttton class="dropbtn">\\ Tutorial \\</buttton>
+                <div class="dropdown-content">
+                    <a href="#">Скачать</a>
+                  </div>
+            </div>
+        </div>
+        
+        
             
     </header>
+   
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-102px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+        </script>
 </body>
 </html>

@@ -1,38 +1,95 @@
 * {
     font-family: 'Inter', sans-serif;
 }
+
 body {
     background: #17171B;
 }
+
 header {
     box-sizing: border-box;
-    height: 119px;
 }
-header nav {
-    margin-left: auto;
-    margin-right: auto;
-    width: 96%;
-    padding: 0 70px;
+#navbar {
+    margin-top: 5px;
+    display: flex;
+    height: 80px;
+    width: 1320px;
+    justify-content: space-around; 
+    align-items: center;
+    padding: 10px;
+    margin: -12px;
+    list-style-type: none;
     border: 3px solid #3E3E3E;
     border-radius: 10px;
+    position: fixed; /* Make it stick/fixed */
+    top: 0; /* Stay on top */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
 }
-.menu {
-    display: flex;
-    justify-content: space-between; 
-    padding: 10px;
+
+  
+  /* Dropdown container - needed to position the dropdown content */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+    padding: 0 auto;
+  }
+  
+  /* Style the dropdown button to fit inside the topnav */
+  .dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.85);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 32px;
     margin: 0;
-    list-style-type: none;
-}
+  }
+  
+  /* Style the dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background: #17171B;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin: 5px 18px;
+  }
+  
+  /* Style the links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: rgba(255, 255, 255, 0.85);
+    padding: 12px 16px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 26px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+  }
+  
 
-.menu .menu_link {
-font-family: 'Inter';
-font-style: normal;
-font-weight: 200;
-font-size: 32px;
-text-decoration: none;
+  .dropbtn:hover {
+    color: rgba(255, 255, 255, 1.0);
+  }
+  /* Add a grey background to dropdown links on hover */
+  .dropdown-content a:hover {
+    color: rgba(255, 255, 255, 1.0);
+  }
+  #navbar :last-child  .dropdown-content{
+    margin: 5px -5px;
+  }
+  
+  /* Show the dropdown menu when the user moves the mouse over the dropdown button */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
 
-/* or 57px */
 
-
-color: #FFFFFF;
-}
