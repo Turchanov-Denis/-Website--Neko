@@ -88,7 +88,21 @@ body {
   .dropdown:hover .dropdown-content {
     display: block;
   }
-  
+
+  @keyframes moving {
+    from {top: 200px;}
+    to {top: -0px;}
+}
+@-webkit-keyframes moving {
+       from {top: 200px;}
+    to {top: 0px;}
+}
+#movetxt {
+    animation: moving 2s; 
+    animation-timing-function: ease;
+    position:relative;
+}
+
 .introduce{
     margin-top: 75px;
 }
