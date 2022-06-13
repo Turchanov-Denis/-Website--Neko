@@ -6,18 +6,16 @@ body {
     background: #17171B;
 }
 
-header {
-    box-sizing: border-box;
-}
+
 #navbar {
     margin-top: 5px;
+    background: #17171B;
     display: flex;
-    height: 80px;
+    height: 85px;
     width: 1320px;
     justify-content: space-around; 
     align-items: center;
     padding: 10px;
-    margin: -12px;
     list-style-type: none;
     border: 3px solid #3E3E3E;
     border-radius: 10px;
@@ -36,7 +34,7 @@ header {
   
   /* Style the dropdown button to fit inside the topnav */
   .dropdown .dropbtn {
-    font-size: 17px;
+    font-size: 19px;
     border: none;
     outline: none;
     color: rgba(255, 255, 255, 0.85);
@@ -57,7 +55,7 @@ header {
     min-width: 250px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    margin: 5px 18px;
+    margin: 0px 18px;
   }
   
   /* Style the links inside the dropdown */
@@ -83,7 +81,7 @@ header {
     color: rgba(255, 255, 255, 1.0);
   }
   #navbar :last-child  .dropdown-content{
-    margin: 5px -5px;
+    margin: 0px -5px;
   }
   
   /* Show the dropdown menu when the user moves the mouse over the dropdown button */
@@ -91,5 +89,118 @@ header {
     display: block;
   }
   
+.introduce{
+    margin-top: 75px;
+}
+.introduce .intro{
+    margin-top: 101px;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 77px;
+text-align: center;
 
+color: #FFFFFF;
+}
+.introduce .subintro{
+    font-family: 'Inter';
+    margin-top: 60px;
+font-style: normal;
+font-weight: 300;
+font-size: 40px;
+line-height: 48px;
+text-align: center;
 
+color: #FFFFFF;
+}
+.introduce img {
+    display: block;
+    position: relative;
+    right: -1050px;
+    top: -150px;
+    /* content: url(/src/img/Neko_character.png) */
+}
+.desktop_helper {
+    margin-top: -15px;
+}
+.app_section_header {
+    border: 3px solid #3E3E3E;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+
+}
+.app_section_header_text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 58px;
+    color: #FFFFFF;
+}
+
+.app_section_descr{
+    font-family: 'Inter';
+    margin-top: 104px;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 44px;
+    line-height: 53px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.app_section_img{
+    margin-top: 80px;
+}
+.app_section_mark {
+    margin-top: 170px;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 300;
+font-size: 40px;
+line-height: 53px;
+text-align: center;
+
+color: #27B6A5;
+}
+
+.Neko_library {
+    margin-top: 80px;
+}
+
+.Firo_parser {
+    margin-top: 80px;
+}
+.Firo_parser_img {
+    display: block;
+    max-width: 266px;
+    position: relative;
+    right: -1280px;
+    top: -150px;
+    
+}
+.Firo_parser .app_section_img {
+    margin-top: -125px;
+}
+
+.line {
+    border: 1px solid #6D6D6D;
+}
+footer {
+    margin-top: 180px;
+}
+.author_text {
+    margin: 40px 0 70px 0 ;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 200;
+font-size: 32px;
+line-height: 48px;
+text-align: center;
+
+color: #FFFFFF;
+}
